@@ -582,6 +582,44 @@ footer .col-lg-3 i {
     border-radius: 20px 20px 0px 0px;
 }
 
+#tradingmasterpg .nav-link {
+    color: #000;
+}
+
+#tradingmasterpg .nav-underline .nav-link.active {
+    border-bottom-color: #03aa71;
+    border-radius: 0px;
+}
+
+#strategypg nav {
+    background: transparent;
+    box-shadow: none;
+    height: auto;
+}
+
+#strategypg #nav-tabContent .form-select {
+    padding: .375rem 3.2rem .375rem 1rem;
+    font-size: 1.4rem;
+    color: #03aa71;
+    border-radius: 8px;
+    border-color: #c0c7cf;
+}
+
+#strategy-graph>.nav-tabs {
+    background-color: #d8e0e3;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#strategy-graph>.nav-tabs .nav-link {
+    font-size: 20px;
+    width: 33.3%;
+    color: #3f546a;
+}
+
+#strategy-graph>.nav-tabs .nav-link.active {
+    border-radius: 20px 20px 0px 0px;
+}
+
 @media only screen and (max-width: 600px) {
     #highlight span {
         left: 34%;

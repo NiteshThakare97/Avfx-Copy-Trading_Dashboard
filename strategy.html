@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> My Strategy Copy Trading | AVFX </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstarp  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Bootstarp  -->
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- font-awesome  -->
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo">
+                <a href="#"><img src="images/LogoHeader.png" alt=""></a>
+            </div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"><img src="images/LogoHeader.png" alt=""></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li>
+                        <a href="#">HTML & CSS</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Login Forms</a></li>
+                            <li><a href="#">Card Design</a></li>
+                            <li class="more">
+                                <span><a href="#">More</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Neumorphism</a></li>
+                                    <li><a href="#">Pre-loader</a></li>
+                                    <li><a href="#">Glassmorphism</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">JAVASCRIPT</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Dynamic Clock</a></li>
+                            <li><a href="#">Form Validation</a></li>
+                            <li><a href="#">Card Slider</a></li>
+                            <li><a href="#">Complete Website</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active"><a href="strategy.html">My Strategy</a></li>
+                    <li><a href="trading_master.html">Trading Masters</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="#">Simulation</a></li>
+                </ul>
+            </div>
+            <div class="search-box d-none">
+                <i class='bx bx-search'></i>
+                <!-- <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div> -->
+            </div>
+            <div class="loginbtns">
+                <a href="">
+                    <button><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
+                </a>
+                <a href="">
+                    <button><i class="fa-solid fa-user-plus"></i> Register</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <!-- Main body starts  -->
+    <section class="container py-5" id="strategypg">
+        <div class="row">
+            <div class="col-3">
+                <p class="mb-0">
+                    < Back</p>
+            </div>
+            <div class="col-9">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 justify-content-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trading Master </a></li>
+                        <li class="breadcrumb-item active" aria-current="page">BluePeak Trading</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="card card-border shadow mt-2 mb-4 p-3">
+            <div class="d-flex gap-4 justify-content-between flex-wrap">
+                <div class="d-flex gap-2">
+                    <div style="width: 50px; height: 50px; border-radius: 7px; background-color: #697583;"></div>
+                    <div>
+                        <h5 class="mb-0">Blue Peak Trading &nbsp; <img src="images/Traders_Dashboard/Right-mark.png" alt="" width="25px"></h5>
+                        <p>Created: 2025-09-19</p>
+                        <div class="d-flex gap-4">
+                            <a><img src="images/Traders_Dashboard/share.png" alt="" width="20px"></a>
+                            <a><img src="images/Traders_Dashboard/compare.png" alt="" width="25px"></a>
+                            <a><img src="images/Traders_Dashboard/Bookmark.png" alt="" width="20px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div>
+                        <div class="d-flex gap-4 flex-wrap">
+                            <p><img src="images/Traders_Dashboard/Rank5.png" alt="" width="20px"> Risk <span class="fs-5 fw-semibold">5</span></p>
+                            <p><img src="images/Traders_Dashboard/Money_Green.png" alt="" width="20px"> Charges <span class="fs-18 fw-semibold">$0</span></p>
+                            <p><img src="images/Traders_Dashboard/follower.png" alt="" width="20px"> Followers <span class="fs-18 fw-semibold">59</span></p>
+                        </div>
+                        <div class="d-flex gap-3 flex-wrap pb-2 pb-lg-0">
+                            <div class="card rounded-2" style=" padding: 7px 30px;">
+                                <p class="mb-0">AUM &nbsp; &nbsp;<span class="fs-18 fw-semibold">0</span></p>
+                            </div>
+                            <div class="card rounded-2" style=" padding: 7px 30px;">
+                                <p class="mb-0">Copiers &nbsp; &nbsp;<span class="fs-18 fw-semibold">0</span></p>
+                            </div>
+                            <div class="card rounded-2" style=" padding: 7px 30px;">
+                                <p class="mb-0">Leverage &nbsp; &nbsp;<span class="fs-18 fw-semibold">100</span></p>
+                            </div>
+                            <div class="card rounded-2" style=" padding: 7px 30px;">
+                                <p class="mb-0">Min Amount &nbsp; &nbsp;<span class="fs-18 fw-semibold">$50</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 ps-4">
+                        <button class="bg-green" style="padding: 7px 50px;">Copy</button>
+                        <button style="border: 1px solid #1952a2; color: #1952a2; padding: 7px 50px;">Simulate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-9">
+                <div class="card-border">
+                    <nav id="strategy-graph">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-performance-tab" data-bs-toggle="tab" data-bs-target="#nav-performance" type="button" role="tab" aria-controls="nav-performance" aria-selected="true"><img src="images/Traders_Dashboard/Performance.png" alt="" width="20px"> Performance</button>
+                            <button class="nav-link" id="nav-trading-tab" data-bs-toggle="tab" data-bs-target="#nav-trading" type="button" role="tab" aria-controls="nav-trading" aria-selected="false"><img src="images/Traders_Dashboard/Trading.png" alt="" width="20px"> Trading</button>
+                            <button class="nav-link" id="nav-portfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio" type="button" role="tab" aria-controls="nav-portfolio" aria-selected="false"><img src="images/Traders_Dashboard/Portfolio.png" alt="" width="20px"> Portfolio</button>
+                        </div>
+                    </nav>
+                    <!-- Tab Content  -->
+                    <div class="tab-content p-4" id="nav-tabContent">
+                        <!-- Tab 1  -->
+                        <div class="tab-pane fade show active" id="nav-performance" role="tabpanel" aria-labelledby="nav-performance-tab" tabindex="0">
+                            <div style="width: max-content; margin-left: auto;">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>2025</option>
+                                    <option value="1">2024</option>
+                                    <option value="2">2023</option>
+                                    <option value="3">2022</option>
+                                </select>
+                            </div>
+                            <h5 class="mb-4">Monthly Statistics</h5>
+                            <img src="images/Traders_Dashboard/Graph.png" alt="" class="w-100">
+                            <div class="card shadow py-3 px-2 my-4">
+                                <div class="px-4">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col">
+                                            <h5>2025</h5>
+                                        </div>
+                                        <div class="col text-center">
+                                            <h6>September</h6>
+                                        </div>
+                                        <div class="col text-end">
+                                            <h6>PNL Calender</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row gap-2 pt-3">
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                        <div class="col card-border text-center px-4 py-3" style="background-color: #d8e0e3;">
+                                            <h6 class="mb-0">Mon</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab 2  -->
+                        <div class="tab-pane fade" id="nav-trading" role="tabpanel" aria-labelledby="nav-trading-tab" tabindex="0">
+                            In Trading Tab keep the original design as it is just have to match the colour code.
+                        </div>
+                        <!-- Tab 3  -->
+                        <div class="tab-pane fade" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab" tabindex="0">
+                            In Portfolio Tab keep the original design as it is just have to match the colour code.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3"></div>
+        </div>
+    </section>
+    <!-- Main body ends  -->
+
+    <!-- Footer -->
+    <div style="width: 100%; height: 4px; background: linear-gradient(90deg, #1952a2, #04c499 60%); "></div>
+    <footer class="pt-5 pb-2 ">
+        <div class="container ">
+            <div class="row " style="border-bottom: 1px solid #a8b2bc; ">
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="d-flex mb-3 align-items-center ">
+                        <img src="images/LogoFootercopy.png " alt=" ">
+                        <h4 class="fs-5 ms-2 ps-2 mb-0 " style="border-left: 1px solid #a8b2bc; ">Join The Community Of Thousands Of Traders</h4>
+                    </div>
+                    <p class="fs-14 ">Empower your trading Journey With expert knowledge, community support, and tools that help you stay ahead in the markets.</p>
+                    <img src="images/AVFX_copytradingDashboard.png " alt=" " class="mb-4 w-100 ">
+                </div>
+                <div class="col-lg-2 col-md-4 ">
+                    <h4 class="mb-3 pb-2 ms-4 " style="border-bottom: 1px solid #a8b2bc; ">COMPANY</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>How it works?</li>
+                        <li>News & Highlights</li>
+                        <li>Blog</li>
+                        <li>Disclaimer</li>
+                        <li>Help desk</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="mb-3 pb-2 ms-4 " style="border-bottom: 1px solid #a8b2bc; ">LEGAL</h4>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>View All Legal Informations</li>
+                        <li>Risk Disclosure & Warning Notice</li>
+                        <li>Preventing Money Laundering</li>
+                        <li>Forex trading account closer guidelines</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="mb-3 pb-2 ms-4 " style="border-bottom: 1px solid #a8b2bc; ">CONTACT</h4>
+                    <ul class="mb-4 ">
+                        <li><img src="images/call.png " alt=" " width="16px "> &nbsp; +31592757088</li>
+                        <li><img src="images/Mail.png " alt=" " width="16px "> &nbsp; info@avfxcapital.com</li>
+                        <li><img src="images/Mail.png " alt=" " width="16px "> &nbsp; support@avfxcapital.com</li>
+                    </ul>
+                    <h4 class="mb-3 pb-2 ms-4 " style="border-bottom: 1px solid #a8b2bc; ">FOLLOW US ON</h4>
+                    <div class="pb-3 ms-4 ">
+                        <a href=" "><i class="fa-brands fa-facebook "></i></a>
+                        <a href=" "><i class="fa-brands fa-square-instagram "></i></a>
+                        <a href=" "><i class="fa-brands fa-telegram "></i></a>
+                        <a href=" "><i class="fa-brands fa-square-x-twitter "></i></a>
+                        <a href=" "><i class="fa-brands fa-medium "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <p class="fs-18 mt-3 mb-2 " style="color: #697583; "><b>Disclaimer:</b></p>
+                <ul>
+                    <li><b>Legal:</b> AVFX Technology (SV) Limited (Reg. 24760 IBC 2018) and AVFX Technology Georgia (Lic. TFZ/190424/01) provide brokerage & managed account services in currencies, commodities, indexes, and leveraged financial instruments.</li>
+                    <li><b>Risk Warning:</b> Trading Forex & CFDs involves high risk and may not be suitable for all investors. Please trade responsibly and seek independent advice if needed.</li>
+                    <li><b>Regional Restrictions:</b> AVFX Technology (SV) Limited does not provide services to residents of the USA, Canada, Sudan, Syria, North Korea, Iran.</li>
+                </ul>
+                <h5 class="text-center fs-18 " style="color: #697583; "><i class="fa-solid fa-copyright "></i> 2025 AVFX. All rights reserved.</h5>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
