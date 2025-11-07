@@ -620,6 +620,21 @@ footer .col-lg-3 i {
     border-radius: 20px 20px 0px 0px;
 }
 
+.calender .col {
+    position: relative;
+    border: 1.5px solid #dae2e5;
+}
+
+.calender .col p {
+    padding: 2.2rem 0px;
+}
+
+.calender .col>span {
+    position: absolute;
+    top: 3px;
+    right: 9px;
+}
+
 @media only screen and (max-width: 600px) {
     #highlight span {
         left: 34%;
@@ -630,5 +645,11 @@ footer .col-lg-3 i {
     }
     #my-fav-traders-col8 {
         width: 80%;
+    }
+    .calender .col p {
+        width: max-content;
+    }
+    .calender-blur {
+        padding: 0.75rem 3rem !important;
     }
 }
