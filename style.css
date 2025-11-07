@@ -652,4 +652,7 @@ footer .col-lg-3 i {
     .calender-blur {
         padding: 0.75rem 3rem !important;
     }
+    #strategy-graph>.nav-tabs .nav-link {
+        width: 50%;
+    }
 }

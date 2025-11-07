@@ -367,43 +367,61 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card shadow rounded-4">
+                            <div class="card shadow rounded-4" style="border: 1px solid #c0c7cf;">
                                 <div class="d-flex justify-content-between bg-green rounded-top-4 py-3 px-4">
                                     <h4 class="fw-normal mb-0">Statistics</h4>
                                     <h4 class="fw-normal mb-0">Sept-2025</h4>
                                 </div>
-                                <div class="row m-auto p-4">
-                                    <div class="col-md-3 col-6" style="border-right: 1px solid #c0c7cf;">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                <div class="row p-4">
+                                    <div class="col-md-3 col-6 d-flex justify-content-center" style="border-right: 1px solid #c0c7cf;">
+                                        <div class="pb-4 pb-md-0">
+                                            <h5 class="mb-0">4.47%</h5>
+                                            <p class="mb-0">Growth (%)</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6" style="border-right: 1px solid #c0c7cf;">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                    <div class="col-md-3 col-6 d-flex justify-content-center" style="border-right: 1px solid #c0c7cf;">
+                                        <div class="pb-4 pb-md-0">
+                                            <h5 class="mb-0">02</h5>
+                                            <p class="mb-0">Long Trades</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6" style="border-right: 1px solid #c0c7cf;">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                    <div class="col-md-3 col-6 d-flex justify-content-center" style="border-right: 1px solid #c0c7cf;">
+                                        <div>
+                                            <h5 class="mb-0">02</h5>
+                                            <p class="mb-0">Max Open Trades</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                    <div class="col-md-3 col-6 d-flex justify-content-center">
+                                        <div>
+                                            <h5 class="mb-0">3.33</h5>
+                                            <p class="mb-0">Sharp Ratio</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6" style="border-right: 1px solid #c0c7cf;">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                </div>
+                                <div class="row p-4">
+                                    <div class="col-md-3 col-6 d-flex justify-content-center" style="border-right: 1px solid #c0c7cf;">
+                                        <div class="pb-4 pb-md-0">
+                                            <h5 class="mb-0">$102.6 </h5>
+                                            <p class="mb-0">Avg. Profit</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6" style="border-right: 1px solid #c0c7cf;">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                    <div class="col-md-3 col-6 d-flex justify-content-center" style="border-right: 1px solid #c0c7cf;">
+                                        <div class="pb-4 pb-md-0">
+                                            <h5 class="mb-0">0</h5>
+                                            <p class="mb-0">Short Trades</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6" style="border-right: 1px solid #c0c7cf;">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                    <div class="col-md-3 col-6 d-flex justify-content-center" style="border-right: 1px solid #c0c7cf;">
+                                        <div class="pb-3 pb-md-0">
+                                            <h5 class="mb-0">21h 4m 7s</h5>
+                                            <p class="mb-0">Avg. Holding Time</p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-6">
-                                        <h5 class="mb-0">4.47%</h5>
-                                        <p class="mb-0">Growth (%)</p>
+                                    <div class="col-md-3 col-6 d-flex justify-content-center">
+                                        <div class="pb-3 pb-md-0">
+                                            <h5 class="mb-0">-- --</h5>
+                                            <p class="mb-0">Profit Factor</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +437,143 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3"></div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-border p-3" id="strategy-overview">
+                    <ul class="nav" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="overview" data-bs-toggle="tab" data-bs-target="#overview-pane" type="button" role="tab" aria-controls="overview-pane" aria-selected="true">Overview</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="strategy-info" data-bs-toggle="tab" data-bs-target="#strategy-info-pane" type="button" role="tab" aria-controls="strategy-info-pane" aria-selected="false">Strategy Info</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show pt-4 active" id="overview-pane" role="tabpanel" aria-labelledby="overview" tabindex="0">
+                            <div class="d-flex justify-content-between gap-3 mb-4" style="border-bottom: 1px solid #c0c7cf;">
+                                <p>Last Updated:</p>
+                                <div class="text-end">
+                                    <h5 class="fs-18 mb-1">2025-10-08</h5>
+                                    <p>05:35:00</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fs-18 mb-2">Performance</h5>
+                                <h5 class="fs-18 mb-2">30 Days <img src="images/Traders_Dashboard/down_arrow_blue.png" alt="" width="12x"></h5>
+                            </div>
+                            <div class="card rounded-3 px-2 pt-3" style="background-color: #f9fafb;">
+                                <div class="d-flex gap-2">
+                                    <div class="p-2 rounded-2" style="border: 1px dashed #1952a2;">
+                                        <h5 style="color: #1952a2;">0%</h5>
+                                        <p class="mb-0 fs-14">Daily Realized Profit</p>
+                                    </div>
+                                    <div class="p-2 rounded-2" style="border: 1px dashed #03aa71;">
+                                        <h5 style="color: #03aa71;">164.26%</h5>
+                                        <p class="mb-0 fs-14">Last 30 Days Profit</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between pt-4">
+                                    <p>Growth(ROI %)</p>
+                                    <p style="color: #03aa71;">169.58</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Drawdown(MAX %)</p>
+                                    <p style="color: #03aa71;">70.98</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Win Rate (%)</p>
+                                    <p style="color: #03aa71;">53.57</p>
+                                </div>
+                                <div>
+                                    <img src="images/Traders_Dashboard/progressBar.png" alt="" width="100%">
+                                </div>
+                                <div class="d-flex gap-2 justify-content-between pt-2">
+                                    <div>
+                                        <h5 class="mb-0">15</h5>
+                                        <p class="fs-14"><img src="images/Traders_Dashboard/green-circle.png" alt="" width="10px"> Profitable Trades</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">9</h5>
+                                        <p class="fs-14"><img src="images/Traders_Dashboard/Orange-circle.png" alt="" width="10px"> Losing Trades</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between pt-4 pb-1">
+                                <h5 class="fs-18 mb-2">Assets</h5>
+                                <h5 class="fs-18 mb-2">30 Days <img src="images/Traders_Dashboard/down_arrow_blue.png" alt="" width="12x"></h5>
+                            </div>
+                            <div class="card rounded-3 px-2 pt-3" style="background-color: #f9fafb;">
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Balance($)</p>
+                                    <p>0.040</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Equity($)</p>
+                                    <p>650399.960</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Deposit($)</p>
+                                    <p>5500.790</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Withdrawal($)</p>
+                                    <p>11090.560</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between pt-4 pb-1">
+                                <h5 class="fs-18 mb-2">Trading Overview</h5>
+                                <h5 class="fs-18 mb-2">30 Days <img src="images/Traders_Dashboard/down_arrow_blue.png" alt="" width="12x"></h5>
+                            </div>
+                            <div class="card rounded-3 px-2 py-3" style="background-color: #f9fafb;">
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Total Trade</p>
+                                    <p>28</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Last Trade</p>
+                                    <p>10 Days Ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Total Copier</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p style="color: #3f546a;">Open Positions:</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="card p-2 d-flex align-items-center justify-content-between flex-row mb-2">
+                                    <div>
+                                        <p class="mb-0"><img src="images/Traders_Dashboard/GreenThumb.png" alt="" width="16px"> Sept. 10</p>
+                                        <p class="fs-18 fw-medium mb-0">Best Trade</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0 text-green">1653.560</h5>
+                                    </div>
+                                </div>
+                                <div class="card p-2 d-flex align-items-center justify-content-between flex-row">
+                                    <div>
+                                        <p class="mb-0"><img src="images/Traders_Dashboard/RedThumb.png" alt="" width="16px"> Sept. 23</p>
+                                        <p class="fs-18 fw-medium mb-0">Worst Trade</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0" style="color: #f24422;">127.400</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-4 pb-1">
+                                <h5 class="fs-18 mb-2">Amount Following</h5>
+                            </div>
+                            <div class="card rounded-3 px-2 py-3" style="background-color: #f9fafb;">
+                                <h5 class="mb-0">$0</h5>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="strategy-info-pane" role="tabpanel" aria-labelledby="strategy-info" tabindex="0">
+                            <p class="p-3">We are here to provide you wonderful RM Strategy with compounding effect. We focus on just one quality trade per day with clearly defined stop-loss (SL) and take-profit (TP) levels. Our approach is build your portfolio with
+                                consistency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Main body ends  -->
