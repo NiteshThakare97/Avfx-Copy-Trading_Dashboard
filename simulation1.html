@@ -95,11 +95,11 @@
             <div class="col-md-3">
                 <h3><img src="images/simulation/simulation.png" alt="" width="30px">&nbsp; Simulation</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-md-9 col-lg-6">
                 <p>Simulation is a tool that helps you replicate the results of the master strategies you are testing in a period of time you decide, based on real-time data.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-12 col-md-6 col-lg-3 pb-4">
                 <div class="card rounded-5 p-4" style="background-color: #f9fafb;">
                     <h5>Amount</h5>
@@ -129,19 +129,19 @@
                                 <p class="mb-0 fs-18">Month</p>
                             </div>
                         </div>
-                        <div class="row px-2 pt-5">
+                        <div class="row px-2 mt-4 pt-5">
                             <button class="bg-green fs-5">Start Simulation</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-9 sim1mascard">
+            <div class="col-12 col-lg-9 sim1mascard pb-4">
                 <div class="card rounded-5 py-4 px-3" style="background-color: #f9fafb;">
                     <h4><img src="images/simulation/Masters.png" alt="" width="20px"> Masters</h4>
-                    <div class="table-responsive">
+                    <div class="table-responsive pt-3 pb-1">
                         <table class="table text-center">
                             <thead>
-                                <tr>
+                                <tr style="border: 1px solid #d2dbdf;">
                                     <th scope="col">MASTERS</th>
                                     <th scope="col">ROI</th>
                                     <th scope="col">WIN</th>
@@ -190,7 +190,7 @@
                                         <h5 class="mb-0">22.70%</h5>
                                     </td>
                                     <td>
-                                        <h5 class="d-flex gap-2 align-items-center mb-0"><img src="images/simulation/Rank5.png" alt="" width="20px"> 5</h5>
+                                        <h5 class="d-flex gap-2 align-items-center mb-0"><img src="images/simulation/Rank4.png" alt="" width="20px"> 4</h5>
                                     </td>
                                     <td>
                                         <div class="d-flex align-items-center gap-2">
@@ -244,7 +244,7 @@
                                         <h5 class="mb-0">22.70%</h5>
                                     </td>
                                     <td>
-                                        <h5 class="d-flex gap-2 align-items-center mb-0"><img src="images/simulation/Rank5.png" alt="" width="20px"> 5</h5>
+                                        <h5 class="d-flex gap-2 align-items-center mb-0"><img src="images/simulation/Rank3.png" alt="" width="20px"> 3</h5>
                                     </td>
                                     <td>
                                         <div class="d-flex align-items-center gap-2">
@@ -271,7 +271,7 @@
                                         <h5 class="mb-0">22.70%</h5>
                                     </td>
                                     <td>
-                                        <h5 class="d-flex gap-2 align-items-center mb-0"><img src="images/simulation/Rank5.png" alt="" width="20px"> 5</h5>
+                                        <h5 class="d-flex gap-2 align-items-center mb-0"><img src="images/simulation/Rank1.png" alt="" width="20px"> 1</h5>
                                     </td>
                                     <td>
                                         <div class="d-flex align-items-center gap-2">
@@ -290,9 +290,80 @@
                             </tbody>
                         </table>
                     </div>
+                    <button class="sim1mascard-btn" type="button" data-bs-toggle="modal" data-bs-target="#login-popup">Add Masters</button>
                 </div>
             </div>
         </div>
+        <div class="row px-2" id="simulationpgres">
+            <div class="px-5 py-3 rounded-top-5" style="background-color: #cdd5d9;">
+                <h5 class="mb-0">Results</h5>
+            </div>
+            <div class="px-5 py-3 rounded-bottom-5" style="border: 1px solid #d2dbdf; background-color: #ebeff2;">
+                <ul class="nav nav-underline" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="result-all" data-bs-toggle="tab" data-bs-target="#result-all-pane" type="button" role="tab" aria-controls="result-all-pane" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dealers" data-bs-toggle="tab" data-bs-target="#dealers-pane" type="button" role="tab" aria-controls="dealers-pane" aria-selected="false">Dealers trap 3x liquidity</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="intradaycurrency" data-bs-toggle="tab" data-bs-target="#intradaycurrency-pane" type="button" role="tab" aria-controls="intradaycurrency-pane" aria-selected="false">Intraday Currency</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tester" data-bs-toggle="tab" data-bs-target="#tester-pane" type="button" role="tab" aria-controls="tester-pane" aria-selected="false">Tester</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mission" data-bs-toggle="tab" data-bs-target="#mission-pane" type="button" role="tab" aria-controls="mission-pane" aria-selected="false">Mission creat billionaires</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="result-all-pane" role="tabpanel" aria-labelledby="result-all" tabindex="0">
+                        <div class="pt-3">
+                            <img src="images/simulation/Graph.png" alt="" width="100%">
+                        </div>
+                        <div class="row pt-5 pb-4 gap-3">
+                            <div class="col rounded-3 d-flex align-items-center justify-content-between p-3" style="border: 1px solid #c3d3e3; background-color: #fff;">
+                                <h5 class="mb-0">Opening Balance</h5>
+                                <h4 class="mb-0 text-green">$1000.00</h4>
+                            </div>
+                            <div class="col rounded-3 d-flex align-items-center justify-content-between p-3" style="border: 1px solid #c3d3e3; background-color: #fff;">
+                                <h5 class="mb-0">Closing Balance</h5>
+                                <h4 class="mb-0 text-green">$900.97</h4>
+                            </div>
+                            <div class="col rounded-3 d-flex align-items-center justify-content-between p-3" style="border: 1px solid #c3d3e3; background-color: #fff;">
+                                <h5 class="mb-0">Total Profit</h5>
+                                <h4 class="mb-0 text-green"><img src="images/simulation/down-arrow-blue.png" alt="" width="14px"> $-99.03</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="dealers-pane" role="tabpanel" aria-labelledby="dealers" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="intradaycurrency-pane" role="tabpanel" aria-labelledby="intradaycurrency" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="tester-pane" role="tabpanel" aria-labelledby="tester" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="mission-pane" role="tabpanel" aria-labelledby="mission" tabindex="0">...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PopUp  -->
+        <div class="modal fade" id="login-popup" tabindex="-1" aria-labelledby="login-popupLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header btn-blue">
+                        <h1 class="modal-title fs-5" id="login-popupLabel">Please login or Sign up...</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+                    </div>
+                    <div class="modal-body pb-0">
+                        <img src="images/simulation/Alert.png" alt="" width="40px" style="margin-bottom: 12px;">
+                        <p>You must be authenticated to add Masters in your portfolio. If you already have a Real or a Demo Investor account please login, otherwise you may create a new account!</p>
+                    </div>
+                    <div class="modal-footer pt-0">
+                        <button type="button" style="color: #1952a2; border: 1px solid #1952a2; border-width: 1px; padding: 0.5rem 1.5rem; background-color: transparent;">Login</button>
+                        <button type="button" style="background-color: #03aa71; border: 1px solid #03aa71; color: #fff;">Create Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PopUp  -->
     </section>
     <!-- Main body ends  -->
 

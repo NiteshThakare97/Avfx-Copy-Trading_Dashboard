@@ -673,6 +673,72 @@ footer .col-lg-3 i {
     .table>thead>tr>th {
         font-weight: 500;
     }
+    .table>tbody>tr>th,
+    .table>tbody>tr>td {
+        border: none;
+        padding: 0.8rem 0.5rem;
+    }
+}
+
+.sim1mascard-btn {
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #cdd5d9;
+    color: #fff;
+    margin-left: 20px;
+}
+
+#simulationpgres .nav .nav-link {
+    color: #3f546a;
+}
+
+#simulationpgres .nav-underline .nav-link.active {
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 0px;
+    border-color: #12af7a;
+}
+
+#simulationpgres .nav-underline {
+    gap: 3rem;
+}
+
+#simulationpg .modal-footer {
+    justify-content: flex-start;
+    border-top: 0px;
+}
+
+#simulationpg .modal-content {
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+#simulationpg .modal-header {
+    padding: .5rem 1.5rem;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#simulationpg .modal-body {
+    padding: .5rem 1.5rem;
+}
+
+#add-master {
+    .modal-header {
+        background: #08173e;
+        color: #fff;
+    }
+    .modal-dialog {
+        max-width: 68%;
+    }
+    .modal-content {
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #simulationpgres .nav-underline {
+        gap: 0rem 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -694,5 +760,8 @@ footer .col-lg-3 i {
     }
     #strategy-graph>.nav-tabs .nav-link {
         width: 50%;
+    }
+    #simulationpgres .nav-underline {
+        gap: 0rem 1.5rem;
     }
 }
