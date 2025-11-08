@@ -635,6 +635,46 @@ footer .col-lg-3 i {
     right: 9px;
 }
 
+#strategy-overview .nav .nav-link {
+    font-size: 16px;
+    color: #3f546a;
+}
+
+#strategy-overview .nav .nav-link.active {
+    font-weight: 600;
+    color: #1952a2;
+    font-size: 18px;
+}
+
+#simulationpg .input-group-text {
+    background-color: #cdd5d9;
+}
+
+#timeframe .card {
+    color: #3f546a;
+}
+
+#timeframe .card:hover {
+    border: 1px solid #03aa71;
+    color: #000;
+}
+
+#masterscard1 {
+    padding: 14.2% 2%;
+}
+
+.sim1mascard {
+    .table>tbody>tr {
+        vertical-align: middle;
+        .input-group {
+            width: 90px;
+        }
+    }
+    .table>thead>tr>th {
+        font-weight: 500;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #highlight span {
         left: 34%;
