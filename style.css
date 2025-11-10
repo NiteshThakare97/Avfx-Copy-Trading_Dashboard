@@ -733,11 +733,28 @@ footer .col-lg-3 i {
     .modal-content {
         border-radius: 20px;
     }
+    .modal-body {
+        background-color: #f9fafb;
+        padding: 20px 30px;
+    }
+}
+
+#popup-table .table tr {
+    border-color: transparent;
+}
+
+#popup-table .table-responsive {
+    border: 1px solid #d7dde1;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     #simulationpgres .nav-underline {
         gap: 0rem 1.2rem;
+    }
+    #add-master {
+        .modal-dialog {
+            max-width: 90%;
+        }
     }
 }
 
@@ -763,5 +780,10 @@ footer .col-lg-3 i {
     }
     #simulationpgres .nav-underline {
         gap: 0rem 1.5rem;
+    }
+    #add-master {
+        .modal-dialog {
+            max-width: 100%;
+        }
     }
 }
