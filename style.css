@@ -747,6 +747,10 @@ footer .col-lg-3 i {
     border: 1px solid #d7dde1;
 }
 
+.fa-copy {
+    color: #3f546a;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     #simulationpgres .nav-underline {
         gap: 0rem 1.2rem;
